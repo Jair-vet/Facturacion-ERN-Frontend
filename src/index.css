@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* #hero {
+    background-image: url('../src/img/MOCKUP-Arte.jpeg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* background-size: cover; */
+ 
+/* .Bg-color {
+    background: #372D37 
+} */
+
+.form-control {
+    @apply flex flex-col p-1 uppercase
+}
+
+.label-control {
+    @apply rounded-md p-2
+}
+.error-field {
+    @apply text-red-500 text-center uppercase mt-1
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+.loader {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-top: 4px solid #4A90E2;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+.campo_sin_editar {
+    @apply bg-gray-300 text-gray-500 cursor-default mt-1 block w-full border border-gray-300 rounded-md p-1 focus:outline-none focus:border-transparent
+}
